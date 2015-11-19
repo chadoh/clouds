@@ -281,9 +281,19 @@ textarea {
 
 /*  Custom styles */
 body {
-    font-size: 2em;
+    font-size: 1em;
     color: white;
     font-family: Futura, Georgia, serif;
+}
+@media(min-width: 600px) {
+  body {
+    font-size: 1.5em;
+  }
+}
+@media(min-width: 1024px) {
+  body {
+    font-size: 2em;
+  }
 }
 p {
     margin: 0;
@@ -291,6 +301,7 @@ p {
 }
 section {
     background-attachment: scroll;
+    background-position: center;
     background-size: cover;
     min-height: 100vh;
     position: relative;
@@ -302,8 +313,14 @@ section {
 }
 section div {
     background-color: rgba(0,0,0,0.5);
-    padding: 3em 0;
+    padding: 0 3%;
     min-height: 100vh;
+}
+section div > *:first-child {
+  padding-top: 3em;
+}
+section div > *:last-child {
+  padding-bottom: 3em;
 }
 section div > * {
     max-width: 800px;
@@ -316,18 +333,13 @@ img {
   max-width: 100%;
 }
 
-.vertical-centering {
-  padding-top: 6rem;
+.vertical-centering, .vertical-centering > * {
+  position: absolute;
+  top: 0; bottom: 0; right: 0; left: 0;
+  margin: auto;
 }
-@media(min-width: 750px) {
-  .vertical-centering, .vertical-centering > * {
-    padding: 0;
-    position: absolute;
-    top: 0; bottom: 0; right: 0; left: 0;
-    margin: auto;
-  }
-  .vertical-centering > * {
-    display: table;
-    width: 100%;
-  }
+.vertical-centering > * {
+  display: table;
+  width: 100%;
+  padding: 0 3%;
 }
