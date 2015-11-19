@@ -305,9 +305,15 @@ section div {
     padding: 3em 0;
     min-height: 100vh;
 }
-section div p {
-    max-width: 25em;
+section div > * {
+    max-width: 800px;
     margin: 0 auto;
+}
+h1 {
+  padding-bottom: 1em;
+}
+img {
+  max-width: 100%;
 }
 
 .vertical-centering {
