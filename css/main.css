@@ -277,3 +277,50 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+
+/*  Custom styles */
+body {
+    font-size: 2em;
+    color: white;
+}
+p {
+    margin: 0;
+    padding-bottom: 2em;
+}
+section {
+    background-attachment: scroll;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+@media (min-width: 1025px) {
+  section {
+      background-attachment: fixed;
+    }
+}
+section div {
+    background-color: rgba(0,0,0,0.5);
+    padding: 3em 0;
+    min-height: 100vh;
+}
+section div p {
+    max-width: 25em;
+    margin: 0 auto;
+}
+
+.vertical-centering {
+  padding-top: 6rem;
+}
+@media(min-width: 750px) {
+  .vertical-centering, .vertical-centering > * {
+    padding: 0;
+    position: absolute;
+    top: 0; bottom: 0; right: 0; left: 0;
+    margin: auto;
+  }
+  .vertical-centering > * {
+    display: table;
+    width: 100%;
+  }
+}
