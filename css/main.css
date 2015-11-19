@@ -311,18 +311,18 @@ section {
       background-attachment: fixed;
     }
 }
-section div {
+section > div {
     background-color: rgba(0,0,0,0.5);
     padding: 0 3%;
     min-height: 100vh;
 }
-section div > *:first-child {
+section > div > *:first-child {
   padding-top: 3em;
 }
-section div > *:last-child {
+section > div > *:last-child {
   padding-bottom: 3em;
 }
-section div > * {
+section > div > * {
     max-width: 800px;
     margin: 0 auto;
 }
@@ -342,4 +342,12 @@ img {
   display: table;
   width: 100%;
   padding: 0 3%;
+}
+
+
+.share-links > * {
+  padding: 0 1em;
+}
+.fb-share-button span {
+  vertical-align: middle !important;
 }

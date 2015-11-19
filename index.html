@@ -27,6 +27,16 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+    <!-- facebook share button code -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=468170059998559";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
     <!--[if lt IE 8]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -200,9 +210,30 @@
     </section>
 
     <section style="background-image: url(/img/earth.jpg)">
+      <div class="vertical-centering" style="background-color: transparent; text-shadow: 0 0 5px black; text-align: center;">
+        <div>
+          <h2>Share some Earth love!</h1>
+
+          <div class="share-links">
+            <!-- facebook -->
+            <div class="fb-share-button" data-href="http://ilike.earthclouds.best" data-layout="button_count"></div>
+
+            <!-- twitter -->
+            <a href="https://twitter.com/share" class="twitter-share-button"{count} data-url="http://ilike.earthclouds.best" data-text="Someday soon, your granddaughter will migrate to Mars." data-via="thebestclouds" data-related="chadoh" data-hashtags="earthcloudsarethebestclouds">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+            <!-- pinterest -->
+            <div style="vertical-align: middle; display: inline-block;">
+              <a data-pin-do="buttonBookmark" href="https://www.pinterest.com/pin/create/button/"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" /></a>
+              <!-- Please call pinit.js only once per page -->
+              <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section style="background-image: url(/img/earth.jpg)">
+    <section style="background-image: url(/img/earth.jpg); text-align: center;">
       <div>
         <h1>Show your Earth pride!</h1>
         <p><a href="https://www.inksy.co/planet-zero"><img src="/img/shirts.png" alt="shirts that say Earth Clouds are the Best Clouds"/></a></p>
