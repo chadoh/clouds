@@ -11,9 +11,9 @@
    ========================================================================== */
 
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
 }
 
 /*
@@ -25,13 +25,13 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 /*
@@ -39,12 +39,12 @@ html {
  */
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 /*
@@ -59,7 +59,7 @@ iframe,
 img,
 svg,
 video {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 /*
@@ -67,9 +67,9 @@ video {
  */
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /*
@@ -281,9 +281,9 @@ textarea {
 
 /*  Custom styles */
 body {
-    font-size: 1em;
-    color: white;
-    font-family: Futura, Georgia, serif;
+  font-size: 1em;
+  color: white;
+  font-family: Futura, Georgia, serif;
 }
 @media(min-width: 600px) {
   body {
@@ -292,39 +292,40 @@ body {
 }
 @media(min-width: 1024px) {
   body {
-    font-size: 2em;
+    font-size: 1.7em;
   }
 }
 p {
-    margin: 0;
-    padding-bottom: 2em;
+  margin: 0;
+  padding-bottom: 2em;
+}
+a {
+  color: #FFCBB4;
 }
 section {
-    background-attachment: scroll;
-    background-position: center;
-    background-size: cover;
-    min-height: 100vh;
-    position: relative;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
 }
 @media (min-width: 1025px) {
   section {
       background-attachment: fixed;
     }
 }
-section > div {
+section .text {
     background-color: rgba(0,0,0,0.5);
     padding: 0 3%;
     min-height: 100vh;
+    padding: 3em 0;
 }
-section > div > *:first-child {
-  padding-top: 3em;
+section .text > div {
+  max-width: 820px;
+  margin: 0 auto;
 }
-section > div > *:last-child {
-  padding-bottom: 3em;
-}
-section > div > * {
-    max-width: 820px;
-    margin: 0 auto;
+section .text p:last-child {
+  padding-bottom: 0;
 }
 h1 {
   padding-bottom: 1em;
@@ -333,17 +334,12 @@ img {
   max-width: 100%;
 }
 
-.vertical-centering, .vertical-centering > * {
-  position: absolute;
-  top: 0; bottom: 0; right: 0; left: 0;
-  margin: auto;
+.vertical-centering {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-around;
 }
-.vertical-centering > * {
-  display: table;
-  width: 100%;
-  padding: 0 3%;
-}
-
 
 .share-links > * {
   padding-right: 1em;
@@ -353,4 +349,18 @@ img {
 }
 .fb-share-button span {
   vertical-align: middle !important;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe, .embed-container object, .embed-container embed { position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
