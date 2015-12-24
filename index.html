@@ -71,6 +71,18 @@
       </div>
     </section>
 
+    <section style="background-image: url(/img/earth.jpg); text-align: center;">
+      <div>
+        <div class="text">
+          <div>
+            <h2>Show your Earth pride!</h2>
+            <p><a href="https://www.inksy.co/planet-zero"><img src="/img/shirts.png" alt="shirts that say Earth Clouds are the Best Clouds"/></a></p>
+            <p>Lucky you! Not only do you have awesome clouds on your planet, but you can also wear a sweet shirt to show it off!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section style="background-image: url(/img/earth.jpg)">
       <div class="vertical-centering" style="text-shadow: 0 0 5px black; text-align: center;">
         <div>
@@ -95,19 +107,7 @@
       </div>
     </section>
 
-    <section style="background-image: url(/img/earth.jpg); text-align: center;">
-      <div>
-        <div class="text">
-          <div>
-            <h1>Show your Earth pride!</h1>
-            <p><a href="https://www.inksy.co/planet-zero"><img src="/img/shirts.png" alt="shirts that say Earth Clouds are the Best Clouds"/></a></p>
-            <p>Lucky you! Not only do you have awesome clouds on your planet, but you can also wear a sweet shirt to show it off!</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section style="background-image: url(/img/clouds.jpeg)">
+    <section class="lazy" data-original="/img/clouds.jpeg" style="background-image: url(/img/philly.jpg)">
       <div class="text">
         <div class="vertical-centering">
           <p>Someday soon...</p>
@@ -115,7 +115,7 @@
       </div>
     </section>
 
-    <section id="content" style="background-image: url(/img/mars1.jpeg); background-position: left">
+    <section class="lazy" data-original="/img/mars1.jpeg" style="background-image: url(/img/philly.jpg); background-position: left">
       <div class="text">
         <div class="vertical-centering">
           <p>your granddaughter will migrate to Mars.</p>
@@ -123,7 +123,7 @@
       </div>
     </section>
 
-    <section style="background-image: url(/img/mars2.jpeg)">
+    <section class="lazy" data-original="/img/mars2.jpeg" style="background-image: url(/img/philly.jpg)">
       <div class="text">
         <div>
           <p>She will pack her bags and leave<br>
@@ -153,7 +153,7 @@
       </div>
     </section>
 
-    <section style="background-image: url(/img/venus1.jpg); background-position: left">
+    <section class="lazy" data-original="/img/venus1.jpg" style="background-image: url(/img/philly.jpg); background-position: left">
       <div class="text">
         <div>
           <p>
@@ -180,7 +180,7 @@
       </div>
     </section>
 
-    <section style="background-image: url(/img/titan1.jpg)">
+    <section class="lazy" data-original="/img/titan1.jpg" style="background-image: url(/img/philly.jpg)">
       <div class="text">
         <div>
           <p>his grandchildren will migrate to Titan,<br>
@@ -202,7 +202,7 @@
       </div>
     </section>
 
-    <section style="background-image: url(/img/titan2.jpg)">
+    <section class="lazy" data-original="/img/titan2.jpg" style="background-image: url(/img/philly.jpg)">
       <div class="text">
         <div>
           <p>And always they will see orange.</p>
@@ -217,7 +217,7 @@
       </div>
     </section>
 
-    <section style="background-image: url(/img/alphacen.gif)">
+    <section class="lazy" data-original="/img/alphacen.gif" style="background-image: url(/img/philly.jpg)">
       <div class="text">
         <div>
           <p>The star nearest ours is Alpha Centauri,<br>
@@ -301,5 +301,12 @@
     <!--     r.parentNode.insertBefore(e,r)}(window,document,'script','ga')); -->
     <!--     ga('create','UA&#45;XXXXX&#45;X','auto');ga('send','pageview'); -->
     <!-- </script> -->
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(function() {
+        $(".lazy").lazyload({effect : "fadeIn"});
+      })
+    </script>
   </body>
 </html>

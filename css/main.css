@@ -327,9 +327,6 @@ section .text > div {
 section .text p:last-child {
   padding-bottom: 0;
 }
-h1 {
-  padding-bottom: 1em;
-}
 img {
   max-width: 100%;
 }
