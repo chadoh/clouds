@@ -287,7 +287,7 @@ body {
 }
 @media(min-width: 600px) {
   body {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 }
 @media(min-width: 1024px) {
