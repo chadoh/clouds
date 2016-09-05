@@ -5,7 +5,7 @@ require 'simple-cloudfront-invalidator'
 require 'mime-types'
 
 log = Logger.new(STDOUT)
-log.level = Logger::INFO
+log.level = Logger::DEBUG
 
 config = YAML.load_file("config.yml")
 pwd = Dir.getwd
@@ -25,7 +25,7 @@ namespace :aws do
 
     log.info("Beginning to deploy files")
 
-    Dir["**/*"].each do |file|
+    Dir["*"].each do |file|
       next if file == "config.yml" || file == "Rakefile"
       next if File.directory?(file)
       mime_type = MIME::Types.type_for(file).first
